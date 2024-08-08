@@ -1,5 +1,3 @@
----
-
 # FaceAccess - Facial Recognition Attendance System with User Login and Admin Control
 
 **FaceAccess** is an advanced attendance system that combines facial recognition technology with a robust user login and admin control feature. This system ensures secure and efficient attendance tracking while providing administrators with full control over user management and data access.
@@ -8,7 +6,7 @@
 
 - **Facial Recognition** 👤: Accurate and real-time face detection to streamline attendance tracking.
 - **User Login** 🔐: Secure login system allowing users to access personalized attendance records.
-- **Admin Control** 🛡️: Comprehensive admin panel for managing users, monitoring attendance, and controlling system settings.
+- **Admin Panel** 🛡️: Comprehensive admin panel for viewing user details, monitoring attendance.
 - **Attendance Reports** 📊: Generate detailed reports on attendance for users and administrators.
 - **Data Security** 🔒: Ensures secure storage and handling of sensitive data.
 
@@ -55,7 +53,3 @@
 ## 🙏 Acknowledgements
 
 Special thanks to all contributors and the open-source community for their invaluable tools and resources.
-
----
-
-Feel free to make any further adjustments as needed!
