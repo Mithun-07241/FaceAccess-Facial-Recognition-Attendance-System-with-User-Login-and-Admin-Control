@@ -28,10 +28,6 @@
    ```bash
    cd FaceAccess-Facial-Recognition-Attendance-System
    ```
-3. Install the required dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
 
 ## 🚀 Usage
 
