@@ -2,6 +2,11 @@
 
 **FaceAccess** is an advanced attendance system that combines facial recognition technology with a robust user login and admin control feature. This system ensures secure and efficient attendance tracking while providing administrators with full control over user management and data access.
 
+##Download the following file and add to model in the backend folder
+```bash
+https://www.kaggle.com/datasets/sergiovirahonda/shape-predictor-68-face-landmarksdat
+```
+
 ## 🚀 Features
 
 - **Facial Recognition** 👤: Accurate and real-time face detection to streamline attendance tracking.
