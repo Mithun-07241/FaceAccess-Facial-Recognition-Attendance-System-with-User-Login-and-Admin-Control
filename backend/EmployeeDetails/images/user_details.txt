@@ -1,0 +1,2 @@
+1234,Hello,front-end,hello@gmail.com,0987654321
+12,yoo,back-end,yoo@gmail.com,1234567890

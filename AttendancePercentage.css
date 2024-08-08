@@ -1,0 +1,134 @@
+.user-names-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.user-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.user-card {
+  width: 150px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.user-card:hover {
+  transform: scale(1.05);
+}
+
+.user-avatar {
+  width: 100%;
+  height: 150px;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+}
+
+.user-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.user-info {
+  padding: 10px;
+  background-color: #f4f4f4;
+  border-radius: 0 0 10px 10px;
+}
+
+.user-info h3 {
+  margin: 10px 0 0 0;
+  font-size: 16px;
+}
+
+.live-button-container {
+  margin-top: 20px;
+}
+
+.employee-details-fullscreen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  bottom: 50px;
+  background-color: rgba(255, 255, 255, 0); /* Adjusted for better readability */
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.employee-card {
+  display: flex;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  max-width: 800px;
+  width: 100%;
+}
+
+.employee-avatar img {
+  width: 150px;
+  height: 150px;
+  margin-top: 40px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.employee-info h2 {
+  margin-bottom: 10px;
+}
+
+.employee-general-info table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.employee-general-info td {
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+}
+
+.close-button {
+  margin-top: -50px;
+  padding: 10px 20px;
+  font-size: 16px;
+  width: fit-content;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  background-color: #0056b3;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  background: url('E:/front/login/src/Assests/lines_strokes_blue_104907_1280x720.png') no-repeat center center;
+  background-size: cover;
+  padding: 20px;
+  overflow: hidden;
+  z-index: 1000;
+  outline: none;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 999;
+}

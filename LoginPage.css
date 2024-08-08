@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins, sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url(E:\front\login\src\Assests\lines_strokes_blue_104907_1280x720.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+}
+.logo {
+  font-size: 2em;
+  color: white;
+  user-select: none;
+}
+.navigation a {
+  position: relative;
+  font-size: 1.1em;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 40px;
+}
+.navigation a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 3px;
+  background: #fff;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform .5s;
+}
+.navigation a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.navigation .btnLogin-popup {
+  width: 130px;
+  height: 50px;
+  border: 2px solid #fff;
+  outline: none;
+  background: transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1em;
+  color: #fff;
+  font-weight: 500;
+  margin-left: 40px;
+  transition: 0.5s;
+}
+.navigation .btnLogin-popup:hover {
+  background: #fff;
+  color: darkslategray;
+}
+.wrapper {
+  position: relative;
+  width: 400px;
+  height: 480px;
+  background: transparent;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0);
+  overflow: hidden;
+  transition: transform .5s ease, height .2s ease;
+}
+.wrapper.active-popup {
+  transform: scale(1);
+}
+.wrapper.active {
+  height: 480px;
+}
+.form-box {
+  transition: transform .18s ease;
+  transform: translateX(0);
+}
+.wrapper.active .form-box {
+  transition: none;
+  transform: translateX(-400px);
+}
+.wrapper .form-box-register {
+  position: absolute;
+  transition: none;
+  transform: translateX(400px);
+}
+.wrapper.active .form-box-register {
+  transition: transform .18s ease;
+  transform: translateX(0);
+}
+.wrapper .form-box {
+  width: 100%;
+  padding: 40px;
+}
+.form-box h2 {
+  font-size: 2em;
+  color: rgb(252, 246, 246);
+  text-align: center;
+}
+.form-box-register h2 {
+  font-size: 2em;
+  color: rgb(252, 252, 252);
+  text-align: center;
+}
+.input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  margin: 30px 0;
+}
+.input-box label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  font-size: 1em;
+  color: #ffffff;
+  font-weight: 500;
+  pointer-events: none;
+  transition: .5s;
+}
+.input-box input:focus~label,
+.input-box input:valid~label {
+  top: -5px;
+}
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  color: rgb(253, 253, 253);
+  font-weight: 600;
+  padding: 0 35px 0 5px
+}
+.wrapper .icon-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45px;
+  height: 45px;
+  font-size: 2em;
+  background: rgb(7, 7, 7);
+  color: #fff;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 0 0 0 20px;
+  cursor: pointer;
+  z-index: 1;
+}
+.input-box .icon {
+  position: absolute;
+  right: 8px;
+  font-size: 1.2em;
+  color: rgb(255, 255, 255);
+  line-height: 57px;
+}
+.remember-forgot {
+  font-size: .9em;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  margin: -15px 0 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.remember-forgot label input {
+  accent-color: rgb(255, 247, 247);
+  margin-right: 3px;
+}
+.remember-forgot a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.remember-forgot a:hover {
+  text-decoration: underline;
+}
+.btn {
+  width: 100%;
+  height: 45px;
+  background: black;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  color: #fff;
+  font-weight: 500;
+}
+.login-register {
+  font-size: .9em;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  text-align: center;
+  margin: 35px 0 50px 0;
+}
+.login-register a {
+  color: rgb(254, 254, 254);
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 6px;
+}
+.login-register a:hover {
+  text-decoration: underline;
+}
+.form-box-register {
+  position: absolute;
+  transform: translateX(400px);
+}
+  
