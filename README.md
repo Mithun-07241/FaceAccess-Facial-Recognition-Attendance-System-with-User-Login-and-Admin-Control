@@ -36,15 +36,8 @@
    python main.py
    ```
 2. **User Login**: Users can log in to access their personalized attendance records.
-3. **Admin Access**: Admins can log in to manage users, view attendance logs, and configure system settings.
+3. **Admin Access**: Admins can log in to manage users, view attendance logs.
 
-## 🛡️ Admin Panel (Optional)
-
-1. To access the web-based admin panel (if implemented with Flask):
-   ```bash
-   python run_admin_panel.py
-   ```
-2. Admins can manage users, view detailed reports, and control system configurations from the web interface.
 
 ## 🙏 Acknowledgements
 
